@@ -2,16 +2,14 @@ package pl.akademiaqa.zadanie03;
 
 public class Main {
     public static void main(String[] args) {
-        KontoBankowe kontoBankowe1 = new KontoBankowe("Jan Kowalski");
+        KontoBankowe kontoBankowe = new KontoBankowe("Jan Kowalski");
 
-        System.out.println(kontoBankowe1);
+        System.out.println(kontoBankowe);
 
-        kontoBankowe1.wplac(1000);
+        kontoBankowe.wplac(1000);
+        kontoBankowe.wyplac(400);
+        kontoBankowe.wyplac(800);
 
-        kontoBankowe1.wyplac(400);
-
-        kontoBankowe1.wyplac(800);
-
-        System.out.println(kontoBankowe1);
+        System.out.println(kontoBankowe);
     }
 }
